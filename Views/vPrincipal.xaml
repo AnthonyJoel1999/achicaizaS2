@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="achicaizaS2.Views.vPrincipal"
+             Title="vPrincipal">
+    <VerticalStackLayout
+        Spacing="15"
+        Padding="25">
+        <Label 
+            Text="Ventana de Registro"
+            FontSize="24"
+            HorizontalTextAlignment="Center"/>
+        <Border Stroke="Black">
+            <Picker x:Name="pPaises" Title="Paises">
+                <Picker.Items>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Peru</x:String>
+                    <x:String>Colombia</x:String>
+                    <x:String>Brasil</x:String>
+                </Picker.Items>
+            </Picker>
+        </Border>
+        <Button x:Name="btnSeleccionar"
+                Text="Mostrar Pais"
+                Clicked="btnSeleccionar_Clicked"/>
+       <DatePicker x:Name="dpFecha" Format="MM/dd/yyyy"/>
+                   
+    </VerticalStackLayout>
+</ContentPage>
